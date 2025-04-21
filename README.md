@@ -1,6 +1,6 @@
 # 🐦 AI-Assisted Flappy Bird Clone
 
-Hey there! 👋 This is a fun little Flappy Bird clone that @qwertydud3 and I put together during a Sunday afternoon of experimental game development. We wanted to see what it would be like to collaborate with AI tools to create a game from scratch.
+Hey there! 👋 This is a fun little Flappy Bird clone that [@qwertydud3](https://github.com/qwertydud3) and I put together during a Sunday afternoon of experimental game development. We wanted to see what it would be like to collaborate with AI tools to create a game from scratch.
 
 ## 🤖 AI Collaboration Note
 This project was created with significant help from AI tools, including:
