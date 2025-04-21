@@ -41,13 +41,13 @@ pygame.display.set_caption('Flappy Bird')
 clock = pygame.time.Clock()
 
 # Load and scale bird image
-bird_img = pygame.image.load('bird.png')
+bird_img = pygame.image.load('sprites/bird.png')
 bird_size = 20  # Adjust this value based on your image size
 bird_img = pygame.transform.scale(bird_img, (bird_size * 2, bird_size * 2))
 
 # Load and scale pipe image
-pipe_base_img = pygame.image.load('Pipe_Base.png')
-pipe_tip_img = pygame.image.load('Pipe_Tip.png')
+pipe_base_img = pygame.image.load('sprites/pipe_base.png')
+pipe_tip_img = pygame.image.load('sprites/pipe_tip.png')
 
 # Define standard heights for base and tip sections
 PIPE_BASE_HEIGHT = 80  # Standard height for one base section
@@ -61,7 +61,7 @@ pipe_base_img_flipped = pygame.transform.flip(pipe_base_img, False, True)
 pipe_tip_img_flipped = pygame.transform.flip(pipe_tip_img, False, True)
 
 # Load and scale cloud image
-cloud_img = pygame.image.load('cloud.png')
+cloud_img = pygame.image.load('sprites/cloud.png')
 cloud_width = int(cloud_img.get_width() * CLOUD_SCALE)
 cloud_height = int(cloud_img.get_height() * CLOUD_SCALE)
 cloud_img = pygame.transform.scale(cloud_img, (cloud_width, cloud_height))
@@ -94,7 +94,7 @@ clouds = [Cloud() for _ in range(3)]  # Start with 3 clouds
 score = 0
 game_active = False  # Start with game inactive
 game_started = False  # New state to track if game has ever started
-debug_mode = True  # Toggle debug visualization
+debug_mode = False  # Toggle debug visualization
 attempts = 0  # Track number of attempts
 font = pygame.font.Font(None, 36)
 small_font = pygame.font.Font(None, 24)  # Smaller font for additional info
